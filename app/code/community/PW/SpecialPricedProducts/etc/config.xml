@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <PW_SpecialPricedProducts>
+            <version>1.0.0</version>
+        </PW_SpecialPricedProducts>
+    </modules>
+    <global>
+        <models>
+            <pw_specialpricedproducts>
+                <class>PW_SpecialPricedProducts_Model</class>
+            </pw_specialpricedproducts>
+        </models>
+        <helpers>
+            <pw_specialpricedproducts>
+                <class>PW_SpecialPricedProducts_Helper</class>
+            </pw_specialpricedproducts>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <pw_specialpricedproducts>
+                    <file>pw_specialpricedproducts.xml</file>
+                </pw_specialpricedproducts>
+            </updates>
+        </layout>
+        <routers>
+            <pw_specialpricedproducts>
+                <use>standard</use>
+                <args>
+                    <module>PW_SpecialPricedProducts</module>
+                    <frontName>specialpricedproducts</frontName>
+                </args>
+            </pw_specialpricedproducts>
+        </routers>
+    </frontend>
+</config>
